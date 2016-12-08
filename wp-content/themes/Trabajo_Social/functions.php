@@ -265,3 +265,14 @@ the_post_thumbnail( array(100,100) );
 the_post_thumbnail( array(830,370) );  // Other resolutions
 
 /* Funciones Pino y Chj */
+function bajada($limit, $contenido) {
+  /*Función para acortar las bajadas a una longitud de palabras establecida en $limit*/
+  $content = explode(' ', $contenido, $limit);
+  if (count($content)>=$limit) {
+    array_pop($content);
+    $content = implode(" ",$content).'...';
+  } else {
+    $content = implode(" ",$content);
+  }
+	return $content;
+}
