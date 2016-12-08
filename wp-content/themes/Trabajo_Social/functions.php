@@ -1,7 +1,7 @@
 <?php
 /**
  * Bootstrap Basic theme
- * 
+ *
  * @package bootstrap-basic
  */
 
@@ -18,12 +18,12 @@ if (!function_exists('bootstrapBasicSetup')) {
     /**
      * Setup theme and register support wp features.
      */
-    function bootstrapBasicSetup() 
+    function bootstrapBasicSetup()
     {
         /**
          * Make theme available for translation
          * Translations can be filed in the /languages/ directory
-         * 
+         *
          * copy from underscores theme
          */
         load_theme_textdomain('bootstrap-basic', get_template_directory() . '/languages');
@@ -51,11 +51,11 @@ if (!function_exists('bootstrapBasicSetup')) {
 
         // add support custom background
         add_theme_support(
-            'custom-background', 
+            'custom-background',
             apply_filters(
-                'bootstrap_basic_custom_background_args', 
+                'bootstrap_basic_custom_background_args',
                 array(
-                    'default-color' => 'ffffff', 
+                    'default-color' => 'ffffff',
                     'default-image' => ''
                 )
             )
@@ -69,7 +69,7 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
     /**
      * Register widget areas
      */
-    function bootstrapBasicWidgetsInit() 
+    function bootstrapBasicWidgetsInit()
     {
         register_sidebar(array(
             'name'          => __('Header right', 'bootstrap-basic'),
@@ -106,10 +106,10 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
             'before_title'  => '<h1>',
             'after_title'   => '</h1>',
         ));
-		
+
 		 register_sidebar(array(
             'name'          => __('Sidebar Menu Header', 'bootstrap-basic'),
-            'id'            => 'sidebar-menuheader', 
+            'id'            => 'sidebar-menuheader',
             'before_widget' => '',
             'after_widget'  => '',
             'before_title'  => '<h1>',
@@ -126,7 +126,7 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
             'after_title'   => '</h1>',
         ));
 
-           
+
 
 
         register_sidebar(array(
@@ -164,7 +164,7 @@ if (!function_exists('bootstrapBasicEnqueueScripts')) {
     /**
      * Enqueue scripts & styles
      */
-    function bootstrapBasicEnqueueScripts() 
+    function bootstrapBasicEnqueueScripts()
     {
         global $wp_scripts;
 
@@ -172,6 +172,9 @@ if (!function_exists('bootstrapBasicEnqueueScripts')) {
         wp_enqueue_style('bootstrap-theme-style', get_template_directory_uri() . '/css/bootstrap-theme.min.css', array(), '3.3.7');
         wp_enqueue_style('fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.6.3');
         wp_enqueue_style('main-style', get_template_directory_uri() . '/css/main.css');
+        wp_enqueue_style('owl-style', get_template_directory_uri() . '/css/owl.carousel.css');
+        wp_enqueue_style('owl-theme', get_template_directory_uri() . '/css/owl.theme.css');
+        wp_enqueue_style('pinochj-style', get_template_directory_uri() . '/css/render.css');
 
         wp_enqueue_script('modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.min.js', array(), '3.3.1');
         wp_register_script('respond-script', get_template_directory_uri() . '/js/vendor/respond.min.js', array(), '1.4.2');
@@ -182,6 +185,7 @@ if (!function_exists('bootstrapBasicEnqueueScripts')) {
         wp_enqueue_script('html5-shiv-script');
         wp_enqueue_script('jquery');
         wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array(), '3.3.7', true);
+        wp_enqueue_script('owl-slider', get_template_directory_uri() . '/js/vendor/owl.carousel.min.js', array(), false, true);
         wp_enqueue_script('main-script', get_template_directory_uri() . '/js/main.js', array(), false, true);
         wp_enqueue_style('bootstrap-basic-style', get_stylesheet_uri());
     }// bootstrapBasicEnqueueScripts
@@ -256,8 +260,8 @@ the_post_thumbnail('medium');          // Medium resolution (default 300px x 300
 the_post_thumbnail('large');           // Large resolution (default 640px x 640px max)
 the_post_thumbnail('full');            // Original image resolution (unmodified)
 
-the_post_thumbnail( array(100,100) );  // Other resolutions
+the_post_thumbnail( array(100,100) );
 
+the_post_thumbnail( array(830,370) );  // Other resolutions
 
-
-
+/* Funciones Pino y Chj */

@@ -1,0 +1,32 @@
+.pino-chj-slider-principal {
+  outline: 4px solid #ccc;
+  padding:0px;
+}
+
+.pino-chj-slider-principal .img-slider {
+  padding:0px;
+}
+.pino-chj-slider-principal .owl-theme .owl-controls {
+  margin: 0px;
+  text-align: right;
+}
+.pino-chj-slider-principal .col-md-offset-4 {
+  padding-left: 5px;
+}
+.pino-chj-slider-principal .controles {
+  text-align: right;
+  background: #444444;
+}
+.pino-chj-slider-principal .controles a {
+  color: white;
+}
+.controles-slider {
+  background: #000;
+  padding: 0 8px;
+}
+.pino-chj-slider-principal .controles a {
+  color: white;
+}
+.controles-slider:first-child {
+  border-right: 1px solid white;
+}
