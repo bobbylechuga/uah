@@ -1,3 +1,10 @@
+/*
+  Solucion rara ******
+*/
+.page-container .row, #noticias .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .pino-chj-slider-principal {
   outline: 5px solid #E6EFEA;
   padding:0px;
@@ -51,9 +58,38 @@
   background: -webkit-linear-gradient(top,  #ffffff 0%,#d1d6c5 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #ffffff 0%,#d1d6c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d6c5',GradientType=0 ); /* IE6-9 */
-
   padding-bottom: 1px;
 }
+
+.pino-chj-4-opciones {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.opcionesimg {
+  text-transform: uppercase;
+  top: 20px !important;
+}
+
+.pino-chj-noticias {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+}
+.pino-chj-col-noticias {
+  min-height: 200px;
+  max-height: 300px;
+}
+.pino-chj-col-noticias {
+  background: #E6EFEA;
+}
+.pino-chj-col-noticias:nth-child(2) {
+  background: #ECECEC;
+}
+
+
+
+
 /* Reglas reescritas */
 
 .site-title {
