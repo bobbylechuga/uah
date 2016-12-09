@@ -38,8 +38,9 @@
          <div class="col-sm-7">
            <ul class="menu1"><?php get_sidebar('menuheader'); ?></ul>
          </div>
-         <div class="col-sm-2">
-           <ul><?php wp_nav_menu( array( 'theme_location' => 'sociales' )); ?></ul>
+         <div class="col-sm-2 tex-right">
+           <!-- Iconos agregados por jquery -->
+           <?php wp_nav_menu( array( 'theme_location' => 'sociales' )); ?>
          </div>
          <div class="col-sm-3">
            <p class="text-right pino-chj-networkname"><?php bloginfo('name'); ?></p>
@@ -54,7 +55,12 @@
         <div class="row row-with-vspace site-branding">
            <div class="col-md-6 site-title">
               <h1 class="site-title-heading">
-                 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('description'); ?></a>
+               <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+                 <?php
+                  $tituloDelSitio = explode("|", get_bloginfo('description'));
+                  echo $tituloDelSitio[0]." <strong>".$tituloDelSitio[1]."</strong>";
+                 ?>
+               </a>
               </h1>
            </div>
            <div class="col-md-6 page-header-top-right">

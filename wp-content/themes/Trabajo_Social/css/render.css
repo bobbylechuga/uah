@@ -40,6 +40,10 @@
   text-indent: 0;
 }
 
+.menu-redes-sociales-top-container {
+    text-align: right;
+}
+
 .pino-chj-slider-principal {
   outline: 5px solid #E6EFEA;
   padding:0px;
