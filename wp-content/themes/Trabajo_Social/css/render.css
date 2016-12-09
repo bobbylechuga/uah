@@ -7,10 +7,15 @@
 }
 
 /* FIN */
-
+/* HEADER */
 .page-header-top-right img {
   float: right;
 }
+
+.pino-chj-networkname {
+  text-transform: uppercase;
+}
+
 #menu-carrera-bienvenida {
   list-style-type: none;
   font-size: 13px;

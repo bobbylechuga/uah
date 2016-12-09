@@ -12,13 +12,14 @@ get_header();
  */
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
-<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+<div class="container">
+  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
     <?php if(function_exists('bcn_display'))
     {
         bcn_display();
     }?>
-</div>
-<div class="row">
+  </div>
+  <div class="row">
 
 		<div class="col-md-3">
 			<div  id="menu-bienvenida"><?php get_sidebar('bienvenida'); ?> </div>
@@ -30,13 +31,13 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 					Cienfuegos 46, Santiago de Chile  <br>
 					+56 22 8897410 <br>
 					antropologia@uahurtado.cl
-								 </div>	
-	    </div>	
+								 </div>
+	    </div>
 
 
 				<div class="col-md-9" content-area" id="main-column">
 					<main id="main" class="site-main" role="main">
-						
+
 
 
 
@@ -52,7 +53,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
   </div>
  </div>
  <?php endwhile; endif; ?>
- 
+
 
 
 
@@ -63,4 +64,5 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 					</main>
 				</div>
 	</div>
-<?php get_footer(); ?> 
+</div>
+<?php get_footer(); ?>

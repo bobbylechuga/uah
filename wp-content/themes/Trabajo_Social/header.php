@@ -34,7 +34,14 @@
 
   <div id="headermenu" class="container-fluid">
      <div class="container">
-        <ul class="menu1"><?php get_sidebar('menuheader'); ?></ul>
+       <div class="row">
+         <div class="col-sm-9">
+           <ul class="menu1"><?php get_sidebar('menuheader'); ?></ul>
+         </div>
+         <div class="col-sm-3">
+           <p class="text-right pino-chj-networkname"><?php bloginfo('name'); ?></p>
+         </div>
+       </div>
      </div>
   </div>
 <div class="container">
@@ -44,7 +51,7 @@
         <div class="row row-with-vspace site-branding">
            <div class="col-md-6 site-title">
               <h1 class="site-title-heading">
-                 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">Departamento de <strong><?php bloginfo('name'); ?> </strong></a>
+                 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('description'); ?></a>
               </h1>
            </div>
            <div class="col-md-6 page-header-top-right">

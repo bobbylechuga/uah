@@ -25,4 +25,10 @@
   if (academicos === true) {
     $(".single-team-area img").addClass("caja");
   }
+
+  /* Correcciones header */
+  var titulo = $(".site-title h1 a").text();
+  titulo = titulo.split('|');
+  var nuevoTitulo =  titulo[0]+' de <strong>'+titulo[1]+'</strong>';
+  $(".site-title h1 a").html(nuevoTitulo);
 });
