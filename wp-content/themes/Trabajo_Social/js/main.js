@@ -15,8 +15,14 @@
   });
   $("#siguiente-slider").click(function(){
     owl.trigger('owl.next');
-  })
+  });
   $("#anterior-slider").click(function(){
     owl.trigger('owl.prev');
-  })
+  });
+
+  /* Correccion clases acedemicos */
+  var academicos = $("body").hasClass("page-template-page-academicos");
+  if (academicos === true) {
+    $(".single-team-area img").addClass("caja");
+  }
 });

@@ -99,7 +99,7 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
         ));
 
         register_sidebar(array(
-            'name'          => __('Sidebar dir', 'bootstrap-basic'),
+            'name'          => __('Sidebar direcci&oacute;n', 'bootstrap-basic'),
             'id'            => 'sidebar-dir',
             'before_widget' => '',
             'after_widget'  => '',

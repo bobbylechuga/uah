@@ -104,9 +104,37 @@
   background: #ECECEC !important;
 }
 
+/*
+  * SINGLE
+*/
+#sidebar-dir h1 {
+  font-size: 14px !important;
+  padding-bottom: 5px !important;
+}
+#sidebar-dir h1:before {
+   font-family: FontAwesome;
+   content: "\f103";
+   padding-right: 5px;
+}
 
+.pino-chj-single .caja {
+  margin-top: 0px;
+}
 
-
+/* Miembros / Acdemicos */
+.tlp-content {
+  background: #fff !important;
+}
+.tlp-content h3, .tlp-content .designation {
+  color: #333 !important;
+}
+.tlp-content .designation {
+  color: #456054 !important;
+  font-weight: 700;
+}
+.tlp-team .layout1 .tlp-content {
+  padding: 10px 0;
+}
 /* Reglas reescritas */
 
 .site-title {
