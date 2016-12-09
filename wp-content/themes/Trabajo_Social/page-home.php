@@ -84,11 +84,23 @@
 
   				while ( $noticiasDestacadas->have_posts() ) {
   					$noticiasDestacadas->the_post();
+            $cajaimpar = "";
+            if($cont%2 <> 0) {
+              $cajaimpar = "box-impar";
+            }
   	?>
           <div class="col-sm-4 col-md-4">
-            <div class="box1"><?php echo get_the_title(); ?></div>
+            <div class="box1 <?php echo $cajaimpar; ?>">
+              <p>
+                <small><?php $cat = get_the_category(); echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id ) ).'">'.$cat[0]->name.'</a>'; ?></small>
+              </p>
+              <h3><?php echo get_the_title(); ?></h3>
+              <div class="fecha"><?php echo get_the_date(); ?></div>
+              <p class="bajada"><?php echo bajada("50", strip_tags(get_the_content())); ?></p>
+            </div>
           </div>
   	<?php
+            $cont++;
   				}
   			wp_reset_postdata();
   		} else {

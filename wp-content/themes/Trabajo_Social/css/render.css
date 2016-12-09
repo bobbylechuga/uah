@@ -76,15 +76,15 @@
   margin-bottom: 30px;
   background: #fff;
 }
-.pino-chj-col-noticias {
+#noticias .col-sm-4 .box1 {
   min-height: 200px;
-  max-height: 300px;
+  max-height: 400px;
 }
 .pino-chj-col-noticias {
   background: #E6EFEA;
 }
-.pino-chj-col-noticias:nth-child(2) {
-  background: #ECECEC;
+.box-impar {
+  background: #ECECEC !important;
 }
 
 
