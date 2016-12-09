@@ -48,15 +48,7 @@
               </h1>
            </div>
            <div class="col-md-6 page-header-top-right">
-              <div class="sr-only">
-                 <a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
-              </div>
-              <?php if (is_active_sidebar('header-right')) { ?>
-              <div class="pull-right">
-                 <?php dynamic_sidebar('header-right'); ?>
-              </div>
-              <div class="clearfix"></div>
-              <?php } // endif; ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
            </div>
         </div>
         <!--.site-branding-->

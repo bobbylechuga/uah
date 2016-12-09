@@ -5,6 +5,23 @@
   margin-left: 0px;
   margin-right: 0px;
 }
+
+/* FIN */
+
+.page-header-top-right img {
+  float: right;
+}
+#menu-carrera-bienvenida {
+  list-style-type: none;
+  font-size: 13px;
+}
+#menu-carrera-bienvenida li {
+  display: inline;
+}
+
+#menu-carrera-bienvenida a {
+  color: #fff;
+}
 .pino-chj-slider-principal {
   outline: 5px solid #E6EFEA;
   padding:0px;
