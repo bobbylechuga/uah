@@ -31,4 +31,15 @@
   titulo = titulo.split('|');
   var nuevoTitulo =  titulo[0]+' de <strong>'+titulo[1]+'</strong>';
   $(".site-title h1 a").html(nuevoTitulo);
+
+  /* Cambiar menu twitter, facebook por fontawsome */
+  $("#menu-redes-sociales-top li").each(function(){
+      var red = $(this).text();
+      var li = $(this).find("a");
+      if(red == "twitter") {
+        $(li).html('<i class="fa fa-twitter" aria-hidden="true"></i>');
+      }else if (red == "facebook") {
+        $(li).html('<i class="fa fa-facebook" aria-hidden="true"></i>');
+      }      
+  });
 });

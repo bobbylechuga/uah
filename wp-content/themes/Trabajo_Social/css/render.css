@@ -16,17 +16,30 @@
   text-transform: uppercase;
 }
 
-#menu-carrera-bienvenida {
+#menu-carrera-bienvenida, #menu-redes-sociales-top {
   list-style-type: none;
   font-size: 13px;
 }
-#menu-carrera-bienvenida li {
+#menu-carrera-bienvenida li, #menu-redes-sociales-top li {
   display: inline;
 }
 
-#menu-carrera-bienvenida a {
+#menu-carrera-bienvenida a, #menu-redes-sociales-top a {
   color: #fff;
 }
+
+#menu-redes-sociales-top .twitter a {
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+}
+
+#menu-redes-sociales-top .twitter a:after  {
+  font-family: "FontAwesome";
+  display: block;
+  content: "\f137";
+  text-indent: 0;
+}
+
 .pino-chj-slider-principal {
   outline: 5px solid #E6EFEA;
   padding:0px;

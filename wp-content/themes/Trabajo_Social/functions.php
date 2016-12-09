@@ -44,6 +44,7 @@ if (!function_exists('bootstrapBasicSetup')) {
         // add support menu
         register_nav_menus(array(
             'primary' => __('Primary Menu', 'bootstrap-basic'),
+            'sociales' => 'Redes Sociale'
         ));
 
         // add post formats support

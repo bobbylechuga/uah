@@ -35,8 +35,11 @@
   <div id="headermenu" class="container-fluid">
      <div class="container">
        <div class="row">
-         <div class="col-sm-9">
+         <div class="col-sm-7">
            <ul class="menu1"><?php get_sidebar('menuheader'); ?></ul>
+         </div>
+         <div class="col-sm-2">
+           <ul><?php wp_nav_menu( array( 'theme_location' => 'sociales' )); ?></ul>
          </div>
          <div class="col-sm-3">
            <p class="text-right pino-chj-networkname"><?php bloginfo('name'); ?></p>
