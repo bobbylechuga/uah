@@ -279,24 +279,17 @@ function bajada($limit, $contenido) {
 }
 
 function postgradoShortcode($atts) {
-  
-  $atributos = shortcode_atts( array(
-    'id' => 'ID'
-  ), $atts );
-  
-  $elID = $atributos['id'];
-  
    
 ?>
         <div class="col-xs-18 col-sm-6 col-md-3">
           <div class="thumbnail" style="padding:0px; height:355px;">
-            <img src="http://placehold.it/520x410/E00" class="img-responsive">
+            <img src="<?php echo $atts['imagen']?>" class="img-responsive">
               <div class="caption">
                 <div style="position: absolute; top: 220px; width: 85%;">
                 	 <h4><?php echo $atts['nombre']?></h4>
                    <p><?php echo $atts['descripcion']?></p>
                 </div> 
-                <div style="position: absolute; bottom: 25px; width: 85%;"><a href="#" class="pull-right">Ver m&aacute;s &raquo;</a></div>
+                <div style="position: absolute; bottom: 25px; width: 85%;"><a href="<?php echo $atts['url']?>" class="pull-right" target="_blank">Ver m&aacute;s &raquo;</a></div>
             </div>
           </div>
         </div>
