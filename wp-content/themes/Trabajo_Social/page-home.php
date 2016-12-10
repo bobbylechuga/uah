@@ -91,7 +91,7 @@
   	?>
           <div class="col-sm-4 col-md-4">
             <div class="box1 <?php echo $cajaimpar; ?>">
-              <p>
+              <p class="pino-chj-nombre-categoria">
                 <small><em><?php $cat = get_the_category(); echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id ) ).'">'.$cat[0]->name.'</a>'; ?></em></small>
               </p>
               <h3><a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>

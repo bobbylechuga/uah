@@ -109,7 +109,12 @@
   text-transform: uppercase;
   top: 20px !important;
 }
-
+.pino-chj-nombre-categoria {
+  line-height: 2px;
+}
+.pino-chj-nombre-categoria a {
+  color: #bd1a34;
+}
 .pino-chj-noticias {
   margin-top: 30px;
   margin-bottom: 30px;

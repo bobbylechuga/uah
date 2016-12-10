@@ -35,10 +35,10 @@
   <div id="headermenu" class="container-fluid">
      <div class="container">
        <div class="row">
-         <div class="col-sm-7">
+         <div class="col-sm-8">
            <ul class="menu1"><?php get_sidebar('menuheader'); ?></ul>
          </div>
-         <div class="col-sm-2 tex-right">
+         <div class="col-sm-1 tex-right">
            <!-- Iconos agregados por jquery -->
            <?php wp_nav_menu( array( 'theme_location' => 'sociales' )); ?>
          </div>
