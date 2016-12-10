@@ -236,8 +236,8 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/widgets/BootstrapBasicSearchWidget.php';
 require get_template_directory() . '/inc/template-widgets-hook.php';
-
-
+//shortcode para la direccion
+require get_template_directory() . '/inc/gmaps.php';
 
 
 /**

@@ -162,6 +162,14 @@
 .tlp-team .layout1 .tlp-content {
   padding: 10px 0;
 }
+
+/* Pagina de contactos */
+#map { height: 100%; }
+.pino-chj-mapa-contacto {
+    height: 300px;
+    border: 1px solid red;
+}
+
 /* Reglas reescritas */
 
 .site-title {
