@@ -277,3 +277,49 @@ function bajada($limit, $contenido) {
   }
 	return $content;
 }
+
+function postgradoShortcode($atts) {
+  
+  $atributos = shortcode_atts( array(
+    'id' => 'ID'
+  ), $atts );
+  
+  $elID = $atributos['id'];
+  
+   
+?>
+        <div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail" style="padding:0px; height:355px;">
+            <img src="http://placehold.it/520x410/E00" class="img-responsive">
+              <div class="caption">
+                <div style="position: absolute; top: 220px; width: 85%;">
+                	 <h4><?php echo $atts['nombre']?></h4>
+                   <p><?php echo $atts['descripcion']?></p>
+                </div> 
+                <div style="position: absolute; bottom: 25px; width: 85%;"><a href="#" class="pull-right">Ver m&aacute;s &raquo;</a></div>
+            </div>
+          </div>
+        </div>
+<?php
+  
+}
+
+add_shortcode('sc_postgrado', 'postgradoShortcode');
+
+function _get_shortcodes( $the_content ) {
+
+    $shortcode = [];
+    $pattern = get_shortcode_regex();
+    preg_match_all('/'.$pattern.'/uis', $the_content, $matches);
+
+    for ( $i=0; $i < 40; $i++ ) {
+
+        if ( isset( $matches[0][$i] ) ) {
+           $shortcode[] = $matches[0][$i];
+        }
+
+    }
+
+    return $shortcode;
+
+}
