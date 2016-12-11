@@ -206,5 +206,5 @@
 
 .affix-menu {
   /*Este width fijo es para evitar que el position: absolute del affix-bottom le cambie el ancho visible al menu*/
-  width: 240px;	
+  width: 240px;
 }
