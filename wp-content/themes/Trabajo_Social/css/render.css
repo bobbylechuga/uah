@@ -164,10 +164,24 @@
 }
 
 /* Pagina de contactos */
+.pino-chj-contacto {
+  margin-bottom: 30px;
+}
+
+.pino-chj-contacto h1 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #000000;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  padding-top: 13px;
+  margin-bottom: 30px;
+}
+
 #map { height: 100%; }
 .pino-chj-mapa-contacto {
     height: 300px;
-    border: 1px solid red;
 }
 
 /* Reglas reescritas */
