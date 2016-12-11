@@ -655,7 +655,9 @@ font-size: 13px;
 
 
 .caja_noticia {
-    margin-top: 0px;
+    min-height:415px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     padding: 0px;
     background-color: #e6efea;
 }

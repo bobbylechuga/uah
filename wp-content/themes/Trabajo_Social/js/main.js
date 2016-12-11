@@ -47,14 +47,14 @@
   });
   
   /* Affix al menu de la banda izquierda */
-  
-  var bottomPos = 	$('#footer-menu').outerHeight(true) + $('#site-footer').outerHeight(true) + 40;
+  if ($("#affixMenu").length > 0) {
+    var bottomPos = 	$('#footer-menu').outerHeight(true) + $('#site-footer').outerHeight(true) + 40;
 
-	$('#affixMenu').affix({
-	  offset: {
-	    top: $("#affixFrame").offset().top,
-	    bottom: bottomPos
-	  }
-	});
-  
+	  $('#affixMenu').affix({
+	    offset: {
+	      top: $("#affixFrame").offset().top,
+	      bottom: bottomPos
+	    }
+	  });
+  }
 });
