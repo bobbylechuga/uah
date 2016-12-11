@@ -30,7 +30,7 @@
     						<p><?php echo bajada("30", get_the_content()); ?></p>
     						<div class="leer-mas"><a href="<?php the_permalink(); ?>">Seguir leyendo <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></div>
     					</div>
-    				  <div class="col-md-8 img-slider"><img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=78&txt=830%C3%97370&w=830&h=370"></div>
+    				  <div class="col-md-8 img-slider"><img class="img-responsive" src="<?php $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); echo $thumbnail_src[0]; ?>"></div>
     				</div>
     			<?php  $i++; endwhile; wp_reset_query();?>
     		</div>

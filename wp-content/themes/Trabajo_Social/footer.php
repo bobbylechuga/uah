@@ -93,5 +93,8 @@
 </div>
 <!--wordpress footer-->
 <?php wp_footer(); ?>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA87n4V7u60FmjM4GDB3Ov0hg8qVFe37ss&callback=initMap">
+</script>
 </body>
 </html>

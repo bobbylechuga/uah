@@ -26,6 +26,7 @@
     $(".single-team-area img").addClass("caja");
   }
 
+  
   /* Correcciones header */
   /*
   var titulo = $(".site-title h1 a").text();
