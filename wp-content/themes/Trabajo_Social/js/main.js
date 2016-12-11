@@ -45,4 +45,16 @@
         $(li).html('<i class="fa fa-facebook" aria-hidden="true"></i>');
       }
   });
+  
+  /* Affix al menu de la banda izquierda */
+  
+  var bottomPos = 	$('#footer-menu').outerHeight(true) + $('#site-footer').outerHeight(true) + 40;
+
+	$('#affixMenu').affix({
+	  offset: {
+	    top: $("#affixFrame").offset().top,
+	    bottom: bottomPos
+	  }
+	});
+  
 });

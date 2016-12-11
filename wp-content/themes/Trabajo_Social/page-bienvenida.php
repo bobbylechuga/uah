@@ -21,18 +21,20 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
   </div>
   <div class="row">
 
-		<div class="col-md-3">
-			<div  id="menu-bienvenida"><?php get_sidebar('bienvenida'); ?> </div>
+		<div id="affixFrame" class="col-md-3">
+			<div class="affix-menu hidden-xs hidden-sm" id="affixMenu">
+			  <div  id="menu-bienvenida"><?php get_sidebar('bienvenida'); ?> </div>
 
-					<div class="col-md-3" id="sidebar-bienvenida">
+			  <div class="col-md-3" id="sidebar-bienvenida">
 					<strong>Departamento de Trabajo Social </strong><br> <br>
 
 
 					Cienfuegos 46, Santiago de Chile  <br>
 					+56 22 8897410 <br>
 					antropologia@uahurtado.cl
-								 </div>
-	    </div>
+			  </div>
+			</div>  
+	  </div>
 
 
 				<div class="col-md-9" content-area" id="main-column">

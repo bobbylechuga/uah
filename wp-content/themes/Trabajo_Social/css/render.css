@@ -189,3 +189,22 @@
 .site-title {
   padding-left: 0px;
 }
+
+/* AFFIX */
+
+.affix {
+  /*La clase affix es la que se agrega cuando comienza a estar fixed el menu. La propiedad top aqui dice a qué distancia del borde de la
+  pantalla se detiene el menu*/
+  top: 30px;
+}
+
+.affix-bottom {
+  /* La clase affix-bottom se pone cuando, scrolleando, el menu llega al offset establecido en el JS;
+  position absolute lo deja ahi quieto en esa altura del documento */
+  position: absolute;
+}
+
+.affix-menu {
+  /*Este width fijo es para evitar que el position: absolute del affix-bottom le cambie el ancho visible al menu*/
+  width: 240px;	
+}
