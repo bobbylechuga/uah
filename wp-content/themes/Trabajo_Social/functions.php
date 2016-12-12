@@ -281,18 +281,17 @@ function bajada($limit, $contenido) {
 function postgradoShortcode($atts) {
    
 ?>
-        <div class="col-xs-18 col-sm-6 col-md-3">
-          <div class="thumbnail" style="padding:0px; height:355px;">
-            <img src="<?php echo $atts['imagen']?>" class="img-responsive">
-              <div class="caption">
-                <div style="position: absolute; top: 220px; width: 85%;">
-                	 <h4><?php echo $atts['nombre']?></h4>
-                   <p><?php echo $atts['descripcion']?></p>
-                </div> 
-                <div style="position: absolute; bottom: 25px; width: 85%;"><a href="<?php echo $atts['url']?>" class="pull-right" target="_blank">Ver m&aacute;s &raquo;</a></div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail" style="min-height:375px;">
+            <img src="<?php echo $atts['imagen']?>" alt="<?php echo $atts['nombre']?>">
+            <div class="caption">
+              <h3><?php echo $atts['nombre']?></h3>
+              <p><?php echo $atts['descripcion']?></p>
+              <div style="position: absolute; bottom: 25px; width: 80%;"><a href="<?php echo $atts['url']?>" class="pull-right" target="_blank">Ver m&aacute;s &raquo;</a></div>
             </div>
           </div>
         </div>
+        
 <?php
   
 }

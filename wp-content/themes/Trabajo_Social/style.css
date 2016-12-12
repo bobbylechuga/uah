@@ -655,7 +655,9 @@ font-size: 13px;
 
 
 .caja_noticia {
-    margin-top: 0px;
+    min-height:415px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     padding: 0px;
     background-color: #e6efea;
 }
@@ -792,8 +794,8 @@ margin-top: 30px;
     color: #777 !important;
 	    padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
     border-right: 1px solid #4e685c !important;
     /* border-bottom: 1px solid #4e685c; */
     /* padding-right: 36px; */
