@@ -156,6 +156,7 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
             'before_title'  => '<h1 class="widget-title">',
             'after_title'   => '</h1>',
         ));
+
     }// bootstrapBasicWidgetsInit
 }
 add_action('widgets_init', 'bootstrapBasicWidgetsInit');
@@ -238,6 +239,8 @@ require get_template_directory() . '/inc/widgets/BootstrapBasicSearchWidget.php'
 require get_template_directory() . '/inc/template-widgets-hook.php';
 //shortcode para la direccion
 require get_template_directory() . '/inc/gmaps.php';
+//Estilos por template
+//require get_template_directory() . '/inc/estilos.php';
 
 
 /**
@@ -266,6 +269,8 @@ the_post_thumbnail( array(100,100) );
 the_post_thumbnail( array(830,370) );  // Other resolutions
 
 /* Funciones Pino y Chj */
+add_filter('widget_text','do_shortcode');
+
 function bajada($limit, $contenido) {
   /*Función para acortar las bajadas a una longitud de palabras establecida en $limit*/
   $content = explode(' ', $contenido, $limit);
@@ -278,8 +283,56 @@ function bajada($limit, $contenido) {
 	return $content;
 }
 
+function estilosEspecificos() {
+  $frontpage_id = get_option( 'page_on_front' );
+  $color_prin = get_post_field('color_principal', $frontpage_id);
+  $color_sec = get_post_field('color_secundario', $frontpage_id);
+  $fondo_sidebar = get_post_field('fondo_sidebar', $frontpage_id);
+?>
+  <style>
+    .pino-chj-contenido-noticia .leer-mas a,
+    .pino-chj-contenido-noticia .lead {
+      color: <?php echo $color_prin; ?> !important;
+    }
+    #noticias .titulo {
+      color: <?php echo $color_prin; ?> !important;
+      border-color: <?php echo $color_prin; ?> !important;
+    }
+    #footer-menu a, #footer-menu h3 {
+      color: <?php echo $color_prin; ?> !important;
+    }
+    #menu-menu-sidebar {
+      background: <?php echo $fondo_sidebar; ?> !important;
+    }
+    #menu-menu-sidebar .current-menu-item {
+      background: <?php echo $color_prin; ?> !important;
+    }
+    #menu-menu-sidebar .current-menu-item a {
+      color: #fff !important;
+    }
+    #menu-bienvenida .textwidget {
+      background: <?php echo $fondo_sidebar; ?> !important;
+    }
+    .tlp-content .designation {
+      color: <?php echo $color_prin; ?> !important;
+      font-weight: 700;
+    }
+    #main-column .attachment .ex p,
+    #main-column .post  .ex p,
+    #main-column .page .ex p {
+      color: <?php echo $color_prin; ?> !important;
+    }
+    .tituloacademico, h3 {
+      color: <?php echo $color_prin; ?> !important;
+    }
+  </style>
+<?php
+  }
+
+add_action( 'wp_head', 'estilosEspecificos' );
+
 function postgradoShortcode($atts) {
-   
+
 ?>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail" style="min-height:375px;">
@@ -291,9 +344,9 @@ function postgradoShortcode($atts) {
             </div>
           </div>
         </div>
-        
+
 <?php
-  
+
 }
 
 add_shortcode('sc_postgrado', 'postgradoShortcode');

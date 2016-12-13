@@ -3,7 +3,10 @@
    Template Name: Inicio Web
    */
    ?>
-<?php get_header(); ?>
+<?php
+  get_header();
+  dynamic_sidebar('sidebar-estilos');
+?>
 <?php
    global $wp_query;
    query_posts( array(
