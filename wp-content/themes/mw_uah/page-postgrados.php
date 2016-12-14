@@ -28,15 +28,17 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 		if (have_posts()) : while (have_posts()) : the_post();?>
 		
 			<?php 
-			  $shortcodes = _get_shortcodes( get_the_content() );
-			  foreach ( $shortcodes as  $codigo) {
-			  	  if (strpos($codigo, "doctorado") != false) {
+			  $contenido = get_the_content();
+			  $shortcodes = _get_shortcodes( $contenido );
+			  foreach ( $shortcodes as  $codigo ) {
+			  	  $sc_vars = shortcode_parse_atts( $codigo );
+			  	  if ($sc_vars["tipo"] == "doctorado") {
 			  	  	$res_doctorados .= $codigo;
-			  	  } else if (strpos($codigo, "magister") != false) {
+			  	  } else if ($sc_vars["tipo"] == "magister") {
 			  	  	$res_maestrias .= $codigo;
-			  	  } else if (strpos($codigo, "diplomado") != false) {
+			  	  } else if ($sc_vars["tipo"] == "diplomado") {
 			  	  	$res_diplomados .= $codigo;
-			  	  } else if (strpos($codigo, "curso") != false) {
+			  	  } else if ($sc_vars["tipo"] == "curso") {
 			  	  	$res_cursos .= $codigo;
 			  	  }
             
@@ -45,8 +47,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 			?>
 		<?php endwhile; endif; ?>
 		
-	
-	<?php if( $res_doctorados != "") { ?>
+  <?php if( $res_doctorados != "") { ?>
 	<div class="row pino-chj-ceromargen">
 		<h3>Doctorados</h3>
 		  <hr>
@@ -67,7 +68,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 	<?php if ( $res_diplomados != "") { ?>
 	<div class="row pino-chj-ceromargen">
 		<h3>Diplomados</h3>
-		  <hr>
+		<hr>
 	</div>
 	<div class="row">
 		  <?php do_shortcode(  $res_diplomados ); ?>
