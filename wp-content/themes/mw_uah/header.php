@@ -41,12 +41,13 @@ $URL_SITIO = "http://socialesuah.mentalidadweb.cl";
      <div class="container">
        <div class="row">
          <div class="col-sm-8">
-             <ul id="menu-carrera-bienvenida" class="menu"><li id="menu-item-134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"><a href="#">Antropolog&iacute;a</a></li>
+             <ul id="menu-carrera-bienvenida" class="menu">
+             	  <li id="menu-item-134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"><a href="<?php echo $URL_SITIO; ?>/antropologia/">Antropolog&iacute;a</a></li>
                 <li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="<?php echo $URL_SITIO; ?>/cipol/">Ciencias Pol&iacute;ticas</a></li>
                 <li id="menu-item-191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a href="<?php echo $URL_SITIO; ?>/geografia/">Geograf&iacute;a</a></li>
                 <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="<?php echo $URL_SITIO; ?>/periodismo/">Periodismo</a></li>
-                <li id="menu-item-193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-193"><a href="#">Sociolog&iacute;a</a></li>
-                <li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194"><a href="#">Trabajo Social</a></li>
+                <li id="menu-item-193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-193"><a href="<?php echo $URL_SITIO; ?>/sociologia/">Sociolog&iacute;a</a></li>
+                <li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194"><a href="<?php echo $URL_SITIO; ?>/trabajosocial/">Trabajo Social</a></li>
                 <li id="menu-item-195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-195"><a href="<?php echo $URL_SITIO; ?>/cisoc/">CISOC</a></li>
              </ul>
          </div>
