@@ -27,13 +27,13 @@
     		<div class="nuevo-slider">
     			<?php while (have_posts()) : the_post(); ?>
     				<div class="item">
-    				  <div class="col-md-4 pino-chj-contenido-noticia">
+    				  <div class="col-md-8 col-md-push-4 img-slider"><img class="img-responsive" src="<?php $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); echo $thumbnail_src[0]; ?>"></div>
+    				  <div class="col-md-4 col-md-pull-8 pino-chj-contenido-noticia">
     						<h3><?php the_title(); ?></h3>
     						<p class="lead"><?php echo get_the_excerpt(); ?></p>
     						<p><?php echo bajada("30", get_the_content()); ?></p>
     						<div class="leer-mas"><a href="<?php the_permalink(); ?>">Seguir leyendo <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></div>
     					</div>
-    				  <div class="col-md-8 img-slider"><img class="img-responsive" src="<?php $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); echo $thumbnail_src[0]; ?>"></div>
     				</div>
     			<?php  $i++; endwhile; wp_reset_query();?>
     		</div>
