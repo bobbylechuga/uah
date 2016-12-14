@@ -144,6 +144,10 @@ body {
 .pino-chj-nombre-categoria {
   line-height: 2px;
 }
+.pino-chj-ceromargen {
+  margin-right: 0px;
+  margin-left: 0px;	
+}
 
 .pino-chj-nombre-categoria a {
   color: #bd1a34;
@@ -151,6 +155,8 @@ body {
 .pino-chj-noticias {
   margin-bottom: 30px;
   background: #fff;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
 }
 .pino-chj-noticias .bajada, .pino-chj-contenido-noticia {
   color: #808080 !important;

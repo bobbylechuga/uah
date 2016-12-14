@@ -12,7 +12,7 @@ get_header();
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
 <div class="container">
-	<div class="row">
+	
 		<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
 		    <?php if(function_exists('bcn_display'))
 		    {
@@ -45,32 +45,40 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 			?>
 		<?php endwhile; endif; ?>
 		
-	</div>
+	
 	<?php if( $res_doctorados != "") { ?>
-	<div class="row">
+	<div class="row pino-chj-ceromargen">
 		<h3>Doctorados</h3>
 		  <hr>
+	</div>
+	<div class="row">
 		  <?php do_shortcode( $res_doctorados ); ?>
 	</div>
 	<?php } ?>
 	<?php if ( $res_maestrias != "") { ?>	
-	<div class="row">
+	<div class="row pino-chj-ceromargen">
 		  <h3>Maestr&iacute;as</h3>
 		  <hr>
+	</div>
+	<div class="row">
 		  <?php do_shortcode( $res_maestrias ) ; ?>
 	</div>
 	<?php } ?>
 	<?php if ( $res_diplomados != "") { ?>
-	<div class="row">
+	<div class="row pino-chj-ceromargen">
 		<h3>Diplomados</h3>
 		  <hr>
+	</div>
+	<div class="row">
 		  <?php do_shortcode(  $res_diplomados ); ?>
 	</div>	
 	<?php } ?>
 	<?php if ( $res_cursos != "") { ?>
-	<div class="row">
+	<div class="row pino-chj-ceromargen">
 		  <h3>Educaci&oacute;n continua</h3>
 		  <hr>
+	</div>
+	<div class="row">
 		  <?php do_shortcode(  $res_cursos ); ?>
 	</div>	
 	<?php } ?>	

@@ -11,15 +11,16 @@ get_header();
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
 <div class="container">
-	<div class="row">
+	<div class="row pino-chj-ceromargen">
 		<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
 		    <?php if(function_exists('bcn_display'))
 		    {
 		        bcn_display();
 		    }?>
 		</div>
-		<div class="row pino-chj-contacto">
-			<div class="container">
+	</div>
+	<div class="row pino-chj-contacto">
+			
 				<?php
 					if ( have_posts() ) {
 							while ( have_posts() ) {
@@ -38,8 +39,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 							} // end while
 					} // end if
 				?>
-			</div>
-		</div>
+			
 	</div>
 </div>
 <?php get_footer(); ?>

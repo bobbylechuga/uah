@@ -12,7 +12,7 @@ get_header();
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
 <div class="container">
-	<div class="row">
+	<div class="row pino-chj-ceromargen">
 		<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
 		    <?php if(function_exists('bcn_display'))
 		    {
