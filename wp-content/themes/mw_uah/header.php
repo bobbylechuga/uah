@@ -38,25 +38,27 @@ $URL_SITIO = "http://socialesuah.mentalidadweb.cl";
      <![endif]-->
 
   <div id="headermenu" class="container-fluid">
-    <div class="container">
-    	<div class="row">
-    	  <div class="col-sm-8">	
-          <ul id="menu-carrera-bienvenida" class="menu"><li id="menu-item-134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"><a href="#">Antropolog&iacute;a</a></li>
-            <li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="<?php echo $URL_SITIO; ?>/cipol/">Ciencias Pol&iacute;ticas</a></li>
-            <li id="menu-item-191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a href="<?php echo $URL_SITIO; ?>/geografia/">Geograf&iacute;a</a></li>
-            <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="<?php echo $URL_SITIO; ?>/periodismo/">Periodismo</a></li>
-            <li id="menu-item-193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-193"><a href="#">Sociolog&iacute;a</a></li>
-            <li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194"><a href="#">Trabajo Social</a></li>
-            <li id="menu-item-195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-195"><a href="<?php echo $URL_SITIO; ?>/cisoc/">CISOC</a></li>
-          </ul>
-        </div>  
-        <div class="col-sm-1 text-right">
-        	
-        </div>
-        <div class="col-sm-3">
-        </div>
-      </div>
-    </div>      
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-8">
+             <ul id="menu-carrera-bienvenida" class="menu"><li id="menu-item-134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"><a href="#">Antropolog&iacute;a</a></li>
+                <li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="<?php echo $URL_SITIO; ?>/cipol/">Ciencias Pol&iacute;ticas</a></li>
+                <li id="menu-item-191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a href="<?php echo $URL_SITIO; ?>/geografia/">Geograf&iacute;a</a></li>
+                <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="<?php echo $URL_SITIO; ?>/periodismo/">Periodismo</a></li>
+                <li id="menu-item-193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-193"><a href="#">Sociolog&iacute;a</a></li>
+                <li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194"><a href="#">Trabajo Social</a></li>
+                <li id="menu-item-195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-195"><a href="<?php echo $URL_SITIO; ?>/cisoc/">CISOC</a></li>
+             </ul>
+         </div>
+         <div class="col-sm-1 tex-right">
+           <!-- Iconos agregados por jquery -->
+           <?php wp_nav_menu( array( 'theme_location' => 'sociales' )); ?>
+         </div>
+         <div class="col-sm-3">
+           <p class="text-right pino-chj-networkname">Facultad de Ciencias Sociales</p>
+         </div>
+       </div>
+     </div>
   </div>
 <div class="container">
   <div class="page-container">
